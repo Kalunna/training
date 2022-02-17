@@ -1,0 +1,37 @@
+# Ignore all core Drupal files.
+web/*.*
+# Not this one required by drush...
+!web/autoload.php
+web/core
+
+web/sites/all/README.txt
+web/sites/example.sites.php
+web/sites/README.txt
+web/profiles/README.txt
+web/sites/default/files
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+web/sites/example.settings.local.php
+web/sites/default/default.settings.php
+
+# Ignore core and community's extension
+web/modules/contrib/
+web/themes/contrib/
+web/libraries/
+
+# Ignore dependencies that are managed with Composer.
+vendor/
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files/
+web/sites/*/private/
+private/
+
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest
+
+# IDE settings
+.vscode
+.history
+.DS_Store
